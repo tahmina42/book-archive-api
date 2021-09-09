@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!--Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <!-- Search field for book -->
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center m-4 fw-bold">Find Your Books</h1>
+            <div class="input-group mb-3 w-75 mx-auto">
+                <input type="text" id="search-book" class="form-control" placeholder="Search book">
+                <button onclick="searchBook()" class="btn btn-success" type="button" id="button-addon2">Search</button>
+            </div>
+            <!-- Message show regarding functionality-->
+            <h4 id="empty-error-msg" class="text-center text-danger"></h4>
+            <h4 id="book-not-found-msg" class="text-center text-danger"></h4>
+            <h4 id="total-book-result" class="text-center text-success mb-5"></h4>
+
+        </div>
+    </div>
+    <!-- Display book details -->
+    <section class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="book-info">
+
+        </div>
+
+    </section>
+    <footer></footer>
+    <!-- Script file link -->
+    <script src="js/api.js"></script>
+</body>
+
+</html>
